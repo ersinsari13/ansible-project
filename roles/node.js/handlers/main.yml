@@ -1,0 +1,5 @@
+---
+# handlers file for node.js
+    - name: print the container info
+      ansible.builtin.debug:
+        var: container_info

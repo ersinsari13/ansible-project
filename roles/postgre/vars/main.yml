@@ -1,0 +1,6 @@
+---
+# vars file for postgre
+container_path: /home/ec2-user/postgresql
+container_name: my_postgre
+image_name: ersinsari/postgre
+password: Pp123456789

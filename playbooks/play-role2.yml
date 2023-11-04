@@ -1,0 +1,25 @@
+---
+- name: Docker install and configurations
+  hosts: _development
+  become: true
+  roles:
+  - geerlingguy.docker
+  
+- name: Postgres Database configurations
+  hosts: _ansible_postgresql
+  become: true
+  roles:
+  - postgre
+
+- name: Nodejs server configurations
+  hosts: _ansible_nodejs
+  become: true
+  roles:
+  - nodejs
+
+- name: React UI Server configurations
+  hosts: _ansible_react
+  become: true
+  roles:
+  - react
+  
